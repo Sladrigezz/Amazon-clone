@@ -4,7 +4,6 @@ import './Product.css'
 
 function Product({id, title, image, price, rating}) {
   const [{basket}, dispatch] = useStateValue()
-  console.log(basket);
   const addToBasket = () => {
     dispatch({
       type: "ADD_TO_BASKET",
@@ -26,7 +25,7 @@ function Product({id, title, image, price, rating}) {
           <strong>{price}</strong>
         </p>
         <div className="product__rating">
-          {Array(rating).fill().map((_, i) => (<p>⭐</p>))}
+          {Array(rating).fill().map((_, i) => (<p key={i}>⭐</p>))}
 
         </div>
       </div>
