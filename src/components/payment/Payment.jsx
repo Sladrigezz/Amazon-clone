@@ -45,6 +45,7 @@ function Payment() {
         <div className='payment__section'>
           <div className="payment__title">
             <h3>Payment Method</h3>
+            <p>No Payment Allowed On This FAKE AMAZON CLONE</p>
           </div>
           <div className="payment__details">
 
